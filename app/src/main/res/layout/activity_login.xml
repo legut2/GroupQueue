@@ -21,36 +21,48 @@
             android:layout_width="wrap_content"
             android:layout_height="75dp"
             android:src="@drawable/group_queue"/>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Register with Spotify"
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
             android:layout_marginTop="180dp"
-            android:background="#80585858"
+            android:background="#83669900"
+            android:drawableLeft="@drawable/spotify"
+            android:paddingLeft="45dp"
+            android:paddingRight="45dp"
+            android:text="Register with Spotify"
             android:textAllCaps="false"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white" />
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:drawableLeft="@drawable/facebook"
+            android:paddingLeft="45dp"
+            android:paddingRight="45dp"
             android:text="Register with Facebook"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:layout_marginTop="5dp"
-            android:background="#80585858"
             android:textAllCaps="false"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white" />
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Register with Google"
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
             android:layout_marginTop="5dp"
-            android:background="#80585858"
+            android:background="#82cc0000"
+            android:drawableLeft="@drawable/google"
+            android:paddingLeft="45dp"
+            android:paddingRight="45dp"
+            android:text="Register with Google"
             android:textAllCaps="false"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
