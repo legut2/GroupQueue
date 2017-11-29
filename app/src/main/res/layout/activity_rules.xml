@@ -140,7 +140,6 @@
                 android:background="@android:color/holo_red_light"/>
             <Button
                 android:id="@+id/go_button"
-                android:onClick="onClickGo"
                 android:layout_marginLeft="75dp"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
