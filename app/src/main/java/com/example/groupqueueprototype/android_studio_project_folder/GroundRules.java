@@ -1,5 +1,6 @@
 package com.example.groupqueueprototype.android_studio_project_folder;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +14,8 @@ public class GroundRules extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             //Code to make party goes here
+            goHostView();
+
         }
     };
     protected View.OnClickListener cancelListener = new View.OnClickListener() {
@@ -31,5 +34,10 @@ public class GroundRules extends AppCompatActivity {
         go.setOnClickListener(goListener);
         cancel = (Button) findViewById(R.id.cancel_button);
         cancel.setOnClickListener(cancelListener);
+    }
+
+    public void goHostView() {
+        Intent intent = new Intent(this, HostViewActivity.class);
+        startActivity(intent);
     }
 }

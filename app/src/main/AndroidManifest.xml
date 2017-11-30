@@ -35,7 +35,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".GroundRules"></activity>
+        <activity android:name=".GroundRules" />
+        <activity android:name=".HostViewActivity"></activity>
     </application>
 
 </manifest>
