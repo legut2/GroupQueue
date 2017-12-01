@@ -12,7 +12,7 @@ public class HostViewActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_host_view);
-        mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.sample);
+        mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.walk_on_water);
 
         mediaPlayer.start();
     }
