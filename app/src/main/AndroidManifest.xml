@@ -39,7 +39,8 @@
         <activity android:name=".HostViewActivity" />
         <activity android:name=".GuestViewActivity" />
         <activity android:name=".JoinActivity" />
-        <activity android:name=".CurrentSongActivity"></activity>
+        <activity android:name=".CurrentSongActivity" />
+        <activity android:name=".VoteActivity"></activity>
     </application>
 
 </manifest>
