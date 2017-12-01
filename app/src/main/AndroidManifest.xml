@@ -14,8 +14,30 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+                // this needs to match the scheme and host of the redirect URI as defined in My
+                applications page
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="callback"
+                    android:scheme="groupqueue" />
             </intent-filter>
         </activity>
+        <activity android:name=".PartySearchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GroundRules" />
+        <activity android:name=".HostViewActivity" />
+        <activity android:name=".GuestViewActivity"></activity>
     </application>
 
 </manifest>
