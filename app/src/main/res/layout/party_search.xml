@@ -38,6 +38,14 @@
 
             </SearchView>
 
+            <ListView
+                android:layout_height="270dp"
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:background="@android:color/white">
+            </ListView>
+<!--
             <Button
                 android:id="@+id/topButton"
                 android:layout_width="match_parent"
@@ -71,7 +79,20 @@
                 android:layout_marginLeft="35dp"
                 android:layout_marginRight="35dp"
                 android:layout_marginBottom="30dp"/>
+                -->
         </LinearLayout>
+
+        <Button
+            android:id="@+id/join"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="15dp"
+            android:background="@android:color/holo_green_dark"
+            android:text="Join this party"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/createParty"

@@ -36,7 +36,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".GroundRules" />
-        <activity android:name=".HostViewActivity"></activity>
+        <activity android:name=".HostViewActivity" />
+        <activity android:name=".GuestViewActivity"></activity>
     </application>
 
 </manifest>
