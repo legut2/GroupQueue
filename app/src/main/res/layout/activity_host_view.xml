@@ -11,12 +11,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="GroupQueue"
-            android:gravity="center"
-            android:textSize="30sp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginBottom="1dp"
+            android:src="@drawable/group_queue" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -86,20 +85,24 @@
                 android:layout_height="55dp"
                 android:background="@drawable/back" />
             <Button
+                android:layout_marginLeft="25dp"
                 android:id="@+id/play_btn"
                 android:layout_width="55dp"
                 android:layout_height="55dp"
                 android:background="@drawable/play" />
             <Button
+                android:layout_marginLeft="25dp"
                 android:id="@+id/skip_btn"
                 android:layout_width="55dp"
                 android:layout_height="55dp"
                 android:background="@drawable/skip" />
         </LinearLayout>
+
         <SeekBar
-            android:layout_width="match_parent"
+            android:layout_width="310dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"/>
 
     </LinearLayout>
 
