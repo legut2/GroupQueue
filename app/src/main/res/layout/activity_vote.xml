@@ -9,7 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="#b4ffffff">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -91,7 +92,7 @@
             android:id="@+id/songList"
             android:layout_width="fill_parent"
             android:layout_height="320dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:divider="#b5b5b5"
@@ -100,8 +101,11 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Submit for voting" />
-
-
+            android:text="Submit for voting"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_green_dark"/>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

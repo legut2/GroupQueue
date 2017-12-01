@@ -91,25 +91,34 @@
                 android:id="@+id/songList"
                 android:layout_width="fill_parent"
                 android:layout_height="320dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:divider="#b5b5b5"
-                android:dividerHeight="2dp" />
+                android:dividerHeight="2dp"
+                android:layout_marginBottom="5dp"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
                 <Button
                     android:id="@+id/playSong"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="play"/>
+                    android:text="play"
+                    android:textColor="@android:color/white"
+                    android:background="@android:color/holo_green_dark"/>
                 <Button
                     android:layout_width="wrap_content"
+                    android:layout_marginLeft="20dp"
+
                     android:layout_height="wrap_content"
                     android:text="Submit for proposing"
-                    android:onClick="goVoting"/>
+                    android:onClick="goVoting"
+                    android:padding="10dp"
+                    android:textColor="@android:color/white"
+                    android:background="@android:color/holo_green_dark"/>
             </LinearLayout>
 
         </LinearLayout>

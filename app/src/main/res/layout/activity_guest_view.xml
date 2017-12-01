@@ -5,6 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.groupqueueprototype.android_studio_project_folder.GuestViewActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_gravity="top"
+        android:src="@drawable/background_party"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -13,14 +19,19 @@
             android:layout_width="wrap_content"
             android:layout_height="65dp"
             android:layout_marginBottom="1dp"
+            android:layout_marginTop="10dp"
             android:src="@drawable/group_queue" />
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center">
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/search_background"
+            android:layout_gravity="center"
+            android:padding="7dp">
             <ImageView
                 android:layout_width="25dp"
                 android:layout_height="25dp"
+                android:layout_gravity="center"
                 android:src="@drawable/clock"/>
             <TextView
                 android:layout_marginLeft="20dp"
@@ -33,10 +44,11 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="350dp"
-            android:layout_height="350dp"
-            android:orientation="vertical"
+            android:layout_height="240dp"
             android:layout_gravity="center"
-            android:background="@drawable/customborder">
+            android:background="@drawable/search_background"
+            android:orientation="vertical"
+            android:padding="10dp">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -59,7 +71,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="180dp">
+                android:layout_marginTop="70dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -73,18 +85,27 @@
 
         <TextView
             android:layout_marginTop="15dp"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textStyle="bold"
-            android:textSize="12sp"
-            android:text="Now Playing\n Baby\n By Justin Bieber"/>
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Now Playing\n Baby\n By Justin Bieber"
+            android:background="@drawable/search_background"
+            android:layout_gravity="center"/>
 
         <Button
             android:layout_width="wrap_content"
+            android:layout_gravity="center"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:text="go to proposing stage"
-            android:onClick="goProposing"/>
+            android:padding="10dp"
+            android:onClick="goProposing"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_green_dark"/>
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

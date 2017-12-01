@@ -24,12 +24,14 @@
             android:src="@drawable/group_queue" />
         <LinearLayout
             android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:background="@android:color/white"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_background"
             android:orientation="vertical"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="20dp"
+            android:padding="20dp">
             <TextView
                 android:layout_width="wrap_content"
+                android:layout_gravity="center"
                 android:layout_height="wrap_content"
                 android:text="Jeff's Halloween"
                 android:textSize="20sp"
@@ -37,34 +39,41 @@
                 android:textStyle="bold"/>
             <TextView
                 android:layout_width="wrap_content"
+                android:layout_gravity="center"
                 android:layout_height="wrap_content"
                 android:text="Member(s): 30"
                 android:textSize="20sp"
                 android:layout_marginTop="10dp"/>
             <TextView
                 android:layout_width="wrap_content"
+                android:layout_gravity="center"
                 android:layout_height="wrap_content"
                 android:text="Song Playing: xxx"
                 android:textSize="20sp"
                 android:layout_marginTop="10dp"/>
             <TextView
                 android:layout_width="wrap_content"
+                android:layout_gravity="center"
                 android:layout_height="wrap_content"
                 android:text="Next Voting Period:"
                 android:textSize="20sp"
                 android:layout_marginTop="10dp"/>
             <TextView
                 android:layout_width="wrap_content"
+                android:layout_gravity="center"
                 android:layout_height="wrap_content"
                 android:text="After 10 mins"
                 android:textSize="20sp"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
         </LinearLayout>
         <Button
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="Look for others"
-            android:layout_marginTop="20dp"/>
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_green_dark"/>
         <Button
             android:id="@+id/joinBtn"
             android:onClick="onClickJoin"
@@ -72,6 +81,7 @@
             android:layout_height="wrap_content"
             android:text="Join now"
             android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
             android:background="@android:color/holo_green_dark"/>
     </LinearLayout>
 
