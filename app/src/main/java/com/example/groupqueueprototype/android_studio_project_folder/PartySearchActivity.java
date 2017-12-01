@@ -70,7 +70,7 @@ public class PartySearchActivity extends AppCompatActivity  {
     }
 
     public void goJoinParty() {
-        Intent intent = new Intent(this, GuestViewActivity.class);
+        Intent intent = new Intent(this, JoinActivity.class);
         startActivity(intent);
     }
 }
