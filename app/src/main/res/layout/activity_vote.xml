@@ -6,4 +6,102 @@
     android:layout_height="match_parent"
     tools:context="com.example.groupqueueprototype.android_studio_project_folder.VoteActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:src="@drawable/album_cover"
+                android:scaleType="centerCrop"
+                android:alpha="0.25"/>
+            <ImageView
+                android:id="@+id/menuButton"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/menu_icon" />
+
+            <TextView
+                android:id="@+id/appName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/menuButton"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/menuButton"
+                android:text="Group Queue"
+                android:textSize="30dp"
+                android:textColor="@android:color/black"
+                android:shadowColor="@android:color/darker_gray"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/albumCover"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignLeft="@+id/menuButton"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/album_cover" />
+
+            <TextView
+                android:id="@+id/songName"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignEnd="@+id/appName"
+                android:layout_alignTop="@+id/albumCover"
+                android:layout_marginTop="15dp"
+                android:text=" Walk on Water"
+                android:textColor="@android:color/black"
+                android:shadowColor="@android:color/darker_gray"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/performerName"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignTop="@+id/albumCover"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/songName"
+                android:text="- Eminem"
+                android:textColor="@android:color/black"
+                android:shadowColor="@android:color/darker_gray"
+                android:textSize="15dp" />
+
+            <SeekBar
+                android:id="@+id/songProgressBar"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/songName"
+                android:layout_marginTop="120dp"
+                android:progress="35"
+                android:thumb="?android:attr/listChoiceIndicatorSingle" />
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/songList"
+            android:layout_width="fill_parent"
+            android:layout_height="320dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:divider="#b5b5b5"
+            android:dividerHeight="2dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit for voting" />
+
+
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
