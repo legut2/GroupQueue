@@ -5,11 +5,15 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class HostViewActivity extends Activity {
 
     MediaPlayer musicPlayer;
     private Button playSong;
+    private EditText edt;
+    private TextView myTxtView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,5 +33,13 @@ public class HostViewActivity extends Activity {
                 }
             }
         });
+    }
+
+    public void addText(View v){
+        edt = (EditText) findViewById(R.id.host_edt);
+        String content = "Me: ";
+        content += edt.getText().toString(); //gets you the contents of edit text
+        myTxtView = (TextView) findViewById(R.id.host_text);
+        myTxtView.setText(content);
     }
 }
