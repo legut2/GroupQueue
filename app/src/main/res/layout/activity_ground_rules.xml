@@ -168,7 +168,8 @@
                 android:background="@android:color/holo_red_light"
                 android:text="Cancel"
                 android:textColor="@android:color/white"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textSize="20sp"/>
 
             <Button
                 android:id="@+id/go_button"
@@ -179,7 +180,8 @@
                 android:background="@android:color/holo_green_dark"
                 android:text="Go"
                 android:textColor="@android:color/white"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textSize="20sp"/>
         </LinearLayout>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

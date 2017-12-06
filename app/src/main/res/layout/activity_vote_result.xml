@@ -192,12 +192,12 @@
 
         <Button
             android:id="@+id/back_btn"
-            android:layout_width="120dp"
-            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
-            android:text="Back To The Party"
-            android:textSize="15dp"
-            android:textAllCaps="false"
+            android:text="Back To Party"
+            android:textSize="21sp"
+            android:padding="10dp"
             android:background="@android:color/holo_green_dark"
             android:textColor="@android:color/white"
             android:onClick="toView"/>
