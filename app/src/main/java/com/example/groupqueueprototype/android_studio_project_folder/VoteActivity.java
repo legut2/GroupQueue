@@ -38,9 +38,4 @@ public class VoteActivity extends Activity {
         startActivity(i);
     }
 
-    public void toFinal(View v){
-        Intent i= new Intent(VoteActivity.this, VoteResultActivity.class);
-        startActivity(i);
-    }
-
 }
