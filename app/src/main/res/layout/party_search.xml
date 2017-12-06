@@ -91,6 +91,7 @@
             android:background="@android:color/holo_green_dark"
             android:text="Join this party"
             android:textStyle="bold"
+            android:textSize="19sp"
             android:textAllCaps="false"
             android:textColor="@android:color/white" />
 
@@ -100,6 +101,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
+            android:textSize="19sp"
             android:background="@android:color/holo_green_dark"
             android:text="Create a new party"
             android:textAllCaps="false"
