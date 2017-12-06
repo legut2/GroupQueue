@@ -30,7 +30,7 @@ public class VoteActivity extends Activity {
                 ListView lv = (ListView) arg0;
                 TextView tv = (TextView) lv.getChildAt(arg2);
                 String s = tv.getText().toString();
-                Toast.makeText(VoteActivity.this, "Clicked item is "+s, Toast.LENGTH_LONG).show();
+                //Toast.makeText(VoteActivity.this, "Clicked item is "+s, Toast.LENGTH_LONG).show();
             } });
     }
     public void goSubmit(View v) {

@@ -52,7 +52,7 @@ public class PartySearchActivity extends AppCompatActivity  {
                 ListView lv = (ListView) arg0;
                 TextView tv = (TextView) lv.getChildAt(arg2);
                 String s = tv.getText().toString();
-                Toast.makeText(PartySearchActivity.this, "Clicked item is "+s, Toast.LENGTH_LONG).show();
+                //Toast.makeText(PartySearchActivity.this, "Clicked item is "+s, Toast.LENGTH_LONG).show();
             } });
         //partyInfo = (Button) findViewById(R.id.topButton);
         createNewParty.setOnClickListener(createPartyListener);
