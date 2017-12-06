@@ -9,19 +9,20 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 
+/**
+ * Created by highlandevil on 11/30/17.
+ */
 
 public class VoteResultActivity extends Activity {
 
-    Button backButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vote_result);
-        backButton  = (Button) findViewById(R.id.back_btn);
     }
 
-    public void backToParty(View v) {
+    public void toView(View v) {
         Intent i= new Intent(VoteResultActivity.this, GuestViewActivity.class);
         startActivity(i);
     }

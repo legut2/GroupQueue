@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.groupqueueprototype.android_studio_project_folder.SignUpActivity">
+    tools:context="com.example.groupqueueprototype.android_studio_project_folder.VoteResultActivity">
 
     <ImageView
         android:layout_width="match_parent"
@@ -197,10 +197,10 @@
             android:layout_marginTop="35dp"
             android:text="Back To The Party"
             android:textSize="15dp"
-            android:onClick="backToParty"
             android:textAllCaps="false"
             android:background="@android:color/holo_green_dark"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white"
+            android:onClick="toView"/>
 
     </LinearLayout>
 

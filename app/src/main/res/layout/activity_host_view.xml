@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:title="HostViewActivity"
-    tools:context="com.example.groupqueueprototype.android_studio_project_folder.LoginActivity">
+    tools:context="com.example.groupqueueprototype.android_studio_project_folder.HostViewActivity">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -80,11 +80,17 @@
                 android:layout_marginTop="10dp"
                 android:text="Odell: Hello?"
                 android:textSize="20sp" />
+            <TextView
+                android:id="@+id/host_text"
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="130dp"
+                android:layout_marginTop="90dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -94,8 +100,15 @@
                     android:textSize="20sp" />
 
                 <EditText
-                    android:layout_width="match_parent"
+                    android:id="@+id/host_edt"
+                    android:layout_width="220dp"
                     android:layout_height="wrap_content" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Send"
+                    android:onClick="addText"/>
+
             </LinearLayout>
         </LinearLayout>
 
