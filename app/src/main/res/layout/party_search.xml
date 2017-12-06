@@ -90,6 +90,7 @@
             android:layout_marginBottom="15dp"
             android:background="@android:color/holo_green_dark"
             android:text="Join this party"
+            android:textStyle="bold"
             android:textAllCaps="false"
             android:textColor="@android:color/white" />
 
@@ -102,6 +103,7 @@
             android:background="@android:color/holo_green_dark"
             android:text="Create a new party"
             android:textAllCaps="false"
+            android:textStyle="bold"
             android:textColor="@android:color/white" />
     </LinearLayout>
 
