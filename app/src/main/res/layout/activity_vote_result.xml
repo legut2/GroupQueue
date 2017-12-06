@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.groupqueueprototype.android_studio_project_folder.SignUpActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_party"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voting has Ended!"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:shadowColor="@color/magicColor"
+            />
+
+        <!-- First Part -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_magic_rectangle">
+
+            <ImageView
+                android:id="@+id/albumCover1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/album_cover1" />
+
+            <TextView
+                android:id="@+id/songName1"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignTop="@+id/albumCover"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/albumCover1"
+                android:layout_marginLeft="15dp"
+                android:text="Walk on Water"
+                android:textColor="@android:color/black"
+                android:shadowColor="@color/magicColor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/proposerList1"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@+id/albumCover1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:text="proposed by User 1, 2, 3 and 4"
+                android:textColor="@android:color/black"
+                android:shadowColor="@color/magicColor"
+                android:textSize="15dp"
+                />
+            <TextView
+                android:id="@+id/voteCount1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="4 Votes"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/magicColor"
+                android:shadowColor="@android:color/white"
+                android:textSize="15dp"/>
+
+        </RelativeLayout>
+
+        <!-- Second Part -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_magic_rectangle">
+
+            <ImageView
+                android:id="@+id/albumCover2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/album_cover2" />
+
+            <TextView
+                android:id="@+id/songName2"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignTop="@+id/albumCover2"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/albumCover2"
+                android:layout_marginLeft="15dp"
+                android:text="I Want to Break Free"
+                android:textColor="@android:color/black"
+                android:shadowColor="@color/magicColor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/proposerList2"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@+id/albumCover2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:text="proposed by User 1, 2, and 4"
+                android:textColor="@android:color/black"
+                android:shadowColor="@color/magicColor"
+                android:textSize="15dp"
+                />
+            <TextView
+                android:id="@+id/voteCount2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="3 Votes"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/magicColor"
+                android:shadowColor="@android:color/white"
+                android:textSize="15dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_magic_rectangle">
+
+            <ImageView
+                android:id="@+id/albumCover3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/album_cover3" />
+
+            <TextView
+                android:id="@+id/songName3"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignTop="@+id/albumCover"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/albumCover3"
+                android:layout_marginLeft="15dp"
+                android:text=" Walk on Water"
+                android:textColor="@android:color/black"
+                android:shadowColor="@color/magicColor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/proposerList3"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@+id/albumCover3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:text="proposed by User 1, and 4"
+                android:textColor="@android:color/black"
+                android:shadowColor="@color/magicColor"
+                android:textSize="15dp"
+                />
+            <TextView
+                android:id="@+id/voteCount3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="2 Votes"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/magicColor"
+                android:shadowColor="@android:color/white"
+                android:textSize="15dp"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="35dp"
+            android:text="Back To The Party"
+            android:textSize="15dp"
+            android:onClick="backToParty"
+            android:textAllCaps="false"
+            android:background="@android:color/holo_green_dark"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

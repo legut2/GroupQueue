@@ -17,4 +17,7 @@ public class JoinActivity extends Activity {
         Intent intent = new Intent(this, GuestViewActivity.class);
         startActivity(intent);
     }
+    public void onClickLookForOthers(View v){
+        finish();
+    }
 }

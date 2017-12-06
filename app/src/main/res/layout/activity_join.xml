@@ -71,6 +71,7 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="Look for others"
+            android:onClick="onClickLookForOthers"
             android:layout_marginTop="20dp"
             android:textColor="@android:color/white"
             android:background="@android:color/holo_green_dark"/>

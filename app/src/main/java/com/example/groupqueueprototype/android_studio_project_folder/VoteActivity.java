@@ -6,17 +6,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class VoteActivity extends Activity {
-
+    private Button voteButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vote);
-
+        voteButton = (Button) findViewById(R.id.vote_btn);
         String [] s = new String[] {"Vote on this", "Vote on this", "Vote on this",
                 "Vote on this", "Vote on this", "Vote on this", "Vote on this", "Vote on this"};
         ListView lv = (ListView)findViewById(R.id.songList);
@@ -32,6 +33,9 @@ public class VoteActivity extends Activity {
                 Toast.makeText(VoteActivity.this, "Clicked item is "+s, Toast.LENGTH_LONG).show();
             } });
     }
-
+    public void goSubmit(View v) {
+        Intent i= new Intent(VoteActivity.this, VoteResultActivity.class);
+        startActivity(i);
+    }
 
 }

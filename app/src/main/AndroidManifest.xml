@@ -40,6 +40,7 @@
         <activity android:name=".GuestViewActivity" />
         <activity android:name=".JoinActivity" />
         <activity android:name=".CurrentSongActivity" />
+        <activity android:name=".VoteResultActivity" />
         <activity android:name=".VoteActivity"></activity>
     </application>
 
